@@ -11,7 +11,7 @@ Start: botpanel.bat
 ```
 
 ## Requirements
-[Nodejs](https://nodejs.org/en/)
+* [Nodejs](https://nodejs.org/en/)
 
 ## Changelog
 2018-12-03
