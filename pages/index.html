@@ -108,8 +108,19 @@
                             </div>
                             <h3>Bot Login</h3>
                             <div class="form-group">
-                                <input type="password" placeholder="Bot Token" class="form-control" id="usr">
+                                <input type="password" placeholder="Bot Token" class="form-control" id="bottoken">
+                                <button class="dbtn" style="float:right;" type="checkbox" onclick="showPass()">Show/Hide Token</button><br />
                                 <button style="margin-top:3px;" class="cbtn">Apply</button>
+                                <script>
+                                        function showPass() {
+                                            var x = document.getElementById("bottoken");
+                                            if (x.type === "password") {
+                                                x.type = "text";
+                                            } else {
+                                                x.type = "password";
+                                            }
+                                        }
+                                </script>
                             </div>
                             <h3>Current Bot</h3>
                             <img src="../img/placeholder.jpg" class="bot-img">
@@ -123,13 +134,13 @@
                             <h3>Settings</h3>
                             <div class="form-group">
                                 <label for="usr">Bot Name:</label>
-                                <input id="settings-name" type="text" placeholder="Change Bot Username" class="form-control" id="usr">
+                                <input id="settings-name" type="text" placeholder="Change Bot Username" class="form-control" id="botname">
                                 <button style="margin-top:3px;" class="cbtn">Apply</button>
                             </div>
                             <p>Current Name: Example#5555</p>
                             <div class="form-group">
                                 <label for="usr">Bot Avatar:</label>
-                                <input type="text" placeholder="Change Bot Avatar (link)" class="form-control" id="usr">
+                                <input type="text" placeholder="Change Bot Avatar (link)" class="form-control" id="botavi">
                                 <button style="margin-top:3px;" class="cbtn">Apply</button>
                             </div>
                             <p>Current Avatar: <a href="">https://somelinkhere.idk/</a></p>
@@ -138,7 +149,7 @@
                                 <label class="checkbox-inline"><input type="radio" value=""> Playing</label>
                                 <label class="checkbox-inline"><input type="radio" value=""> Listening</label>
                                 <label class="checkbox-inline"><input type="radio" value=""> Watching</label>
-                                <input type="text" placeholder="Change Bot Activity" class="form-control" id="usr">
+                                <input type="text" placeholder="Change Bot Activity" class="form-control" id="botactivity">
                                 <button style="margin-top:3px;" class="cbtn">Apply</button>
                             </div>
                             <p>Current Activity: <strong>Playing</strong> with electron</p>

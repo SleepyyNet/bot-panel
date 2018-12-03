@@ -190,6 +190,16 @@ a:hover {
     cursor:pointer;
 }
 
+.dbtn {
+    padding:5px !important;
+    color: white;
+    background:#23272A;
+    display: inline-block;
+    border:0px !important;
+    transition:.3s;
+    cursor:pointer;
+}
+
 .darktxt {
     background:#000;
     padding:3px;
