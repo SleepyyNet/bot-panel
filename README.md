@@ -1,6 +1,15 @@
 # Bot Panel
 DBM Developer Utility Tool
 
+## Usage
+There's nothing to use atm really...
+
+But if you insist.
+```
+npm i
+npm start
+```
+
 ## Changelog
 2018-12-03
 * Initial Upload - No functions, just Ui
