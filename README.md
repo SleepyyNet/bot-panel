@@ -9,8 +9,8 @@ DBM Developer Utility Tool
 
 *plenty more will be added soon*
 
-## Contributors
-* None so far.
-
 ## Early Beta Screenshot (not finished product)
 ![screenie](https://etcroot.pw/z8HQDM.png)
+
+## Contributors
+* None so far.
