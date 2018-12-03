@@ -2,7 +2,7 @@
 DBM Developer Utility Tool
 
 ## Usage
-There's nothing to use atm really...
+There's nothing to use atm really.
 
 But if you insist.
 ```
