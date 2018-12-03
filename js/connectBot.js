@@ -1,0 +1,1 @@
+// Will be for connecting the application to the bot. (basically talking to the api from the app)
