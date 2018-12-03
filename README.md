@@ -10,6 +10,9 @@ Run: install.bat
 Start: botpanel.bat
 ```
 
+## Requirements
+[Nodejs](https://nodejs.org/en/)
+
 ## Changelog
 2018-12-03
 * Initial Upload - No functions, just Ui
