@@ -6,9 +6,8 @@ There's nothing to use atm really.
 
 But if you insist.
 ```
-npm i
-npm start
-or open "botpanel.bat"
+Run: install.bat
+Start: botpanel.bat
 ```
 
 ## Changelog
