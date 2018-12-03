@@ -1,6 +1,10 @@
 # Bot Panel
 DBM Developer Utility Tool
 
+## Changelog
+2018-12-03
+* Initial Upload - No functions, just Ui
+
 ## Features
 * Bot Settings
 * Automatic Mods Updater
