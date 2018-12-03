@@ -8,6 +8,7 @@ But if you insist.
 ```
 npm i
 npm start
+or open "botpanel.bat"
 ```
 
 ## Changelog
