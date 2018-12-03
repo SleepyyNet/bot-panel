@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bot Panel</title>
+    <link rel="stylesheet" type="text/css" href="../css/theme.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        section {
+            margin-right:auto;
+            margin-left:auto;
+            }
+            #tabs{
+                color: #eee;
+            }
+            
+            #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+                color: #f3f3f3;
+                background-color: transparent;
+                border-color: transparent transparent #f3f3f3;
+                border-bottom: 4px solid !important;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            #tabs .nav-tabs .nav-link {
+                border: 1px solid transparent;
+                border-top-left-radius: .25rem;
+                border-top-right-radius: .25rem;
+                color: #eee;
+                font-size: 20px;
+            }
+    </style>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        window.$ = window.jQuery = require('jquery');
+    </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-blue bg-blue" style="-webkit-app-region: drag">
+        <img src="../img/botpanel.png" id="title" class="icon" style="float:left;" alt="">
+        <div id="title-bar-btns">
+            <a class="btn" href="" id="min-btn"><i class="fas fa-window-minimize"> </i></a>
+            <a class="btn" href="" id="close-btn"><i class="fas fa-window-close"> </i></a>
+    </nav>
+    <div class="sub-menu fixed-bottom">
+        <small class="smalltext"><i>&copy; etcroot</i></small>
+        <div id="link" style="float:right;">
+            <a class="bright" href="https://github.com/etcroot/bot-panel">Github</a>
+            <a class="bright" href="https://github.com/etcroot/bot-panel">Documentation</a>
+            <a href="https://etcroot.pw/">Patreon</a>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="container">
+        <section id="tabs">
+            <div class="row">
+                <div class="col-xs-12 ">
+                    <nav>
+                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                            <a class="nav-item nav-link" id="nav-livebot-tab" data-toggle="tab" href="#nav-livebot" role="tab" aria-controls="nav-livebot" aria-selected="false">Live Bot</a>
+                            <a class="nav-item nav-link" id="nav-settings-tab" data-toggle="tab" href="#nav-settings" role="tab" aria-controls="nav-settings" aria-selected="false">Bot Settings</a>
+                            <a class="nav-item nav-link" id="nav-update-tab" data-toggle="tab" href="#nav-update" role="tab" aria-controls="nav-update" aria-selected="false">Mods</a>
+                            <a class="nav-item nav-link" id="nav-raw-tab" data-toggle="tab" href="#nav-raw" role="tab" aria-controls="nav-raw" aria-selected="false">Raw Data</a>
+                            <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">Information</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div class="alert alert-info">
+                                <strong>Notice!</strong> This is a very early beta stage.
+                            </div>
+                            <h1>Welcome to Bot Panel</h1>
+                            <p>This is just an example that will be edited <a href="">later</a>.</p>
+                            <h1>Features</h1>
+                            <ul>
+                                <li>Console</li>
+                                <li>Live Bot</li>
+                                <li>Automatic Mod Updates</li>
+                                <li>Raw Data Storage</li>
+                                <li>Managing Node Modules</li>
+                                <li>Bot Settings</li>
+                                <li>Launching DBM</li>
+                            </ul>
+                            <h1>Changelog</h1>
+                            <ol>
+                                <li>Added menu.</li>
+                                <li>Created Bot Settings UI.</li>
+                            </ol>
+                        </div>
+                        <div class="tab-pane fade show" id="nav-livebot" role="tabpanel" aria-labelledby="nav-livebot-tab">
+                            <div class="alert alert-info">
+                                <strong>Notice!</strong> This is a very early beta stage.
+                            </div>
+                            <p>Placeholder, will later be the livebot console.</p>
+                            <button style="margin-top:3px;" class="cbtn">Log In As Bot</button><br /><br />
+                            <img width="500" height="300" src="https://etcroot.pw/aCDsgn.png">
+                        </div>
+                        <div class="tab-pane fade show" id="nav-settings" role="tabpanel" aria-labelledby="nav-settings-tab">
+                            <div class="alert alert-info">
+                                <strong>Notice!</strong> This is a very early beta stage.
+                            </div>
+                            <h3>Bot Login</h3>
+                            <div class="form-group">
+                                <input type="password" placeholder="Bot Token" class="form-control" id="usr">
+                                <button style="margin-top:3px;" class="cbtn">Apply</button>
+                            </div>
+                            <h3>Current Bot</h3>
+                            <img src="./img/placeholder.jpg" class="bot-img">
+                            <span class="bot-name" style="padding-left:10px;">Example#5555</span>
+                            <div style="float:right;">
+                                <button class="cbtn">Restart</button>
+                                <button class="cbtn">Turn Off</button>
+                            </div>
+                            <br />
+                            <br />
+                            <h3>Settings</h3>
+                            <div class="form-group">
+                                <label for="usr">Bot Name:</label>
+                                <input id="settings-name" type="text" placeholder="Change Bot Username" class="form-control" id="usr">
+                                <button style="margin-top:3px;" class="cbtn">Apply</button>
+                            </div>
+                            <p>Current Name: Example#5555</p>
+                            <div class="form-group">
+                                <label for="usr">Bot Avatar:</label>
+                                <input type="text" placeholder="Change Bot Avatar (link)" class="form-control" id="usr">
+                                <button style="margin-top:3px;" class="cbtn">Apply</button>
+                            </div>
+                            <p>Current Avatar: <a href="">https://somelinkhere.idk/</a></p>
+                            <div class="form-group">
+                                <label for="usr">Bot Activity:</label><br />
+                                <label class="checkbox-inline"><input type="radio" value=""> Playing</label>
+                                <label class="checkbox-inline"><input type="radio" value=""> Listening</label>
+                                <label class="checkbox-inline"><input type="radio" value=""> Watching</label>
+                                <input type="text" placeholder="Change Bot Activity" class="form-control" id="usr">
+                                <button style="margin-top:3px;" class="cbtn">Apply</button>
+                            </div>
+                            <p>Current Activity: <strong>Playing</strong> with electron</p>
+                            <fieldset class="danger-zone">
+                                <legend class="dng">Danger Zone</legend>
+                                <center><a class="cbtn-red">Bot Log Out</a></center>
+                            </fieldset><br />
+                        </div>
+                        <div class="tab-pane fade show" id="nav-update" role="tabpanel" aria-labelledby="nav-update-tab">
+                            <div class="alert alert-info">
+                                <strong>Notice!</strong> This is a very early beta stage.
+                            </div>
+                            <label for="file-upload" class="custom-file-upload">
+                                   <strong>DBM Location</strong><br />
+                                   <strong>Ex:</strong><i>C:\Steam\steamapps\common\Discord Bot Maker</i>
+                                </label><br />
+                            <input type="file" name="file" id="file" class="inputfile" />
+                            <label for="file">Choose Directory</label>
+                            <br /><br />
+                            <h3>Mods Control</h3>
+                            <strong>Keep Mods Automatically Updated?</strong><br />
+                            <label class="checkbox-inline"><input type="checkbox" value=""> Yes, please!</label>
+                            <br />
+                            <p>DBM Mods Version: <span class="badge badge-danger">Out of Date</span> <br /><span class="smalltext">Please update to get latest version.</span></p>
+                            <fieldset class="danger-zone">
+                                <legend class="dng">Danger Zone</legend>
+                                <center>
+                                    <a class="cbtn-red">Update Mods</a>
+                                    <a class="cbtn-red">Re-Install Mods</a>
+                                    <a class="cbtn-red">Uninstall Mods</a>
+                                </center>
+                            </fieldset>
+                            <br />
+                        </div>
+                        <div class="tab-pane fade show" id="nav-raw" role="tabpanel" aria-labelledby="nav-raw-tab">
+                            <div class="alert alert-info">
+                                <strong>Notice!</strong> This is a very early beta stage.
+                            </div>
+                            <h1>Raw Data Storage</h1>
+                            <p>In here you'll be able to store, edit & update raw data.</p>
+                        </div>
+                        <div class="tab-pane fade show" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                            <div class="alert alert-info">
+                                <strong>Notice!</strong> This is a very early beta stage.
+                            </div>
+                            <p>Thank you for using Bot Panel!</p>
+                            <div id="link">
+                                <p>If you want to support the project you can do so <a href="">here</a>!</p>
+                            </div>
+                            <br />
+                            <h3>List of Features</h3>
+                            <ul>
+                                <li>Live Bot.</li>
+                                <li>Automatic Mods Updater.</li>
+                                <li>Raw Data Storage.</li>
+                                <li>Bot Settings & Control.</li>
+                            </ul>
+                            <h3>Planned Features</h3>
+                            <ul>
+                                <li>Be able to upload raw to a paste site.</li>
+                                <li>Multi Bot Support.</li>
+                            </ul>
+                            <h3>Changelogs</h3>
+                            <p>2018-12-03</p>
+                            <ul>
+                                <li>Skrrt Skrrt.</li>
+                            </ul>
+                            <i>Bot Panel is not affiliated with DBM Community or DiscordApp.</i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+    </section>
+    </div>
+    <script>
+        $('body').on('click', '#link a', (event) => {
+            event.preventDefault();
+            let link = event.target.href;
+            require("electron").shell.openExternal(link);
+          });
+    </script>
+    <script>
+        const remote = require('electron').remote;
+    
+            document.getElementById("min-btn").addEventListener("click", function (e) {
+                 var window = remote.getCurrentWindow();
+                 window.minimize(); 
+            });
+          
+            document.getElementById("close-btn").addEventListener("click", function (e) {
+                 var window = remote.getCurrentWindow();
+                 window.close();
+            });
+    </script>
+    <!-- Bot Settings / Connect Discord - Coming soon -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
